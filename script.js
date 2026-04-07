@@ -261,14 +261,21 @@ async function iniciar() {
 }
 
 resultadoIdade = (idade) => {
-   let resultado = 'Tem ${idade} anos, é ';
+    let resultado = `Tem ${idade} anos, é `;
     switch (true) {
         case idade < 3:
             resultado += 'bebê';
             break;
         case idade < 12:
             resultado += 'criança';
-}
+            break;
+        case idade < 18:
+            resultado += 'adolescente';
+            break;
+        default:
+            resultado += 'adulto';
+    }
+    return resultado;  
 }
 
 function parOuImpar(num) {
