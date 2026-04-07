@@ -260,8 +260,16 @@ async function iniciar() {
     meuCodigo();
 }
 
-
-
+resultadoIdade = (idade) => {
+   let resultado = 'Tem ${idade} anos, é ';
+    switch (true) {
+        case idade < 3:
+            resultado += 'bebê';
+            break;
+        case idade < 12:
+            resultado += 'criança';
+}
+}
 
 function parOuImpar(num) {
     if (num % 2 == 0) {
@@ -272,7 +280,7 @@ function parOuImpar(num) {
 }
 
 function meuCodigo() {
-    const x = 25;
+    const x = 7;
     tela.defCor('darkblue');
-    tela.escreve(new Coords(50, 50), `O número ${x} é ${parOuImpar(x)}`);
+    tela.escreve(new Coords(50, 50),resultadoIdade(x));
 }
