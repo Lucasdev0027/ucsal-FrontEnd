@@ -272,8 +272,13 @@ resultadoIdade = (idade) => {
         case idade < 18:
             resultado += 'adolescente';
             break;
-        default:
+        case idade < 39:
             resultado += 'adulto';
+        case idade < 60:
+            resultado += 'meia-idade';
+            break;
+        default:
+            resultado += 'idoso';
     }
     return resultado;  
 }
