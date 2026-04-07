@@ -260,9 +260,22 @@ async function iniciar() {
     meuCodigo();
 }
 
+
+
+
+function parOuImpar(num) {
+    if (num % 2 == 0) {
+        return 'par';
+    } else {
+        return 'ímpar';
+    }   
+
+
+
+
 function meuCodigo() {
 
-    iniciaTemporizador(30, true);
+   
 
 
 }
