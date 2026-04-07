@@ -283,16 +283,13 @@ resultadoIdade = (idade) => {
     return resultado;  
 }
 
-function parOuImpar(num) {
-    if (num % 2 == 0) {
-        return 'par';
-    } else {
-        return 'ímpar';
-    }   
-}
 
 function meuCodigo() {
-    const x = 7;
-    tela.defCor('darkblue');
-    tela.escreve(new Coords(50, 50),resultadoIdade(x));
+    let aluno = {
+        nome: 'Judas',
+        email: 'judas@example.com',
+        nota: 7.5
+    }
+
+   console.log(aluno);
 }
