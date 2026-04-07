@@ -269,14 +269,10 @@ function parOuImpar(num) {
     } else {
         return 'ímpar';
     }   
-
-
+}
 
 function meuCodigo() {
     const x = 25;
     tela.defCor('darkblue');
     tela.escreve(new Coords(50, 50), `O número ${x} é ${parOuImpar(x)}`);
-   
-
-
-}}
+}
