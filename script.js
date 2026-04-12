@@ -286,8 +286,8 @@ resultadoIdade = (idade) => {
 
 function meuCodigo() {
     let aluno = {
-        nome: 'Judas',
-        email: 'judas@example.com',
+        nome: 'Lucas',
+        email: 'lucas@example.com',
         nota: 7.5
     }
 
